@@ -15,9 +15,27 @@ function TaskList() {
       // generate new array, with the new task and old
       const updateTask = [ task, ...tasks ];
       setTasks(updateTask);  
-      
     }
   }
+
+  const deleteTask = id =>{
+    //if the id matches it is not include in array 
+    const updateTask = tasks.filter(task => task.id !== id );
+    setTasks(updateTask)
+  }
+
+  const completeTask = id =>{
+    const updateTask = tasks.map( task => {
+      // si el id de la tarea es igual al que buscamos, entonces invertimos el estado
+      if( task.id === id){
+        task.complete = !task.complete;
+      }
+      // se retorna y actualiza
+      return task;
+    })
+    setTasks(updateTask)
+  }
+
 
     return(
         <>
@@ -30,6 +48,9 @@ function TaskList() {
                 id={task.id}
                 text={task.text}
                 complete={task.complete}
+                completeTask={completeTask}
+                deleteTask={deleteTask}
+
               />
               )
             }
