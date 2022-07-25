@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import '../css/TaskForm.css';
+import { v4 as uuidv4 } from 'uuid';
+
 
 function TaskForm (props) {
 
@@ -14,9 +16,12 @@ function TaskForm (props) {
         e.preventDefault();
         
         const taskNew = {
-            id: '1234',
-            text:'Hi'
-        }   
+            id: uuidv4(),
+            text: input,
+            complete: false,
+        }
+        
+        props.onSubmit(taskNew);
     }
 
     return(

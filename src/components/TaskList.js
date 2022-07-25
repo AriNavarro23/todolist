@@ -6,21 +6,30 @@ import '../css/TaskList.css';
 
 function TaskList() {
 
-  const [ task, setTask ] = useState([]);
+  const [ tasks, setTasks ] = useState([]);
 
   const addTask = task => {
-    console.log("Task add");
-    console.log(task);
+    //to make me sure no enter empty space
+    if( task.text.trim()){
+      task.text = task.text.trim();
+      // generate new array, with the new task and old
+      const updateTask = [ task, ...tasks ];
+      setTasks(updateTask);  
+      
+    }
   }
 
     return(
         <>
-          <TaskForm />
+          <TaskForm onSubmit={addTask} />
           <div className='task-list-container'>
             {
-              task.map((task) => 
+              tasks.map((task) => 
               <Task
-              text={task.text}
+                key={task.id}
+                id={task.id}
+                text={task.text}
+                complete={task.complete}
               />
               )
             }
