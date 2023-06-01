@@ -19,5 +19,7 @@ function Task({ id, text, complete, completeTask, deleteTask }) {
         </div>
     )
 }
+
 console.log(Task("hi"))
+
 export default Task
