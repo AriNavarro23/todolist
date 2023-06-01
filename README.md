@@ -1,6 +1,6 @@
 # To do list
 
-## To do list project, delete task and complete check
+Project to do list app, delete task and complete check his functions!
 
 # Tech
 
@@ -12,6 +12,8 @@ This project was made with:
 - Node js
 
 [Live demo](https://todolist-ochre-eight.vercel.app/)
+
+(/public/assets/video/ToDoList.mp4)
 
 https://user-images.githubusercontent.com/94860053/180850991-e7fcf25c-a5a1-4c11-a76b-c4a7e6145cd7.mp4
 
