@@ -7,13 +7,13 @@
 html,
 body{
     color: white;
-    background-color: #1b1b32;
+    background-color: #0d5b56;
     font-family: Lato, sans-serif;
     margin-top: 40px;
 }
 
 h1{
-    color: #1b1b32;
+    color: #ffffff;
     font-size: 25px;
     font-family: roboto, sans-serif;
     text-align: center;
@@ -31,7 +31,7 @@ h1{
 .toDoList-principal{
     width: 600px;
     min-height: 500px;
-    background-color: #d0d0d5;
+    background-color: #69c1ad;
     padding: 25px;
     margin: 10px;
     border-radius: 26px;
