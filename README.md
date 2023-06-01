@@ -11,6 +11,8 @@ This project was made with:
 - React js
 - Node js
 
+[Live demo](https://todolist-ochre-eight.vercel.app/)
+
 https://user-images.githubusercontent.com/94860053/180850991-e7fcf25c-a5a1-4c11-a76b-c4a7e6145cd7.mp4
 
 # Getting Started with Create React App
